@@ -1,0 +1,42 @@
+class Person:
+    def __init__(self, name, age, size, hair_color):
+        self.name = name
+        self.age = age
+        self.size = size
+        self.hair_color = hair_color
+
+    def walk(self, distance):
+        print(f"{self.name} is walking {distance} meters")
+
+    def eat(self, food):
+        print(f"{self.name} is eating {food}")
+    
+    def speak(self, language):
+        print(f"{self.name} is speaking {language}")
+
+    
+class Student(Person):
+
+    def study(self, subject):
+        print(f"{self.name} is studying {subject}")
+
+
+class Teacher(Person):
+
+    def teach(self, subject):
+        print(f"{self.name} is teaching {subject}")
+
+
+student1 = Student("Juan", 12, 1.57, "black")
+student2 = Student("Pablo", 15, 1.75, "red")
+student3 = Student("Mariana", 12, 1.55, "blue")
+
+teacher1 = Teacher("Alfonso", 49, 1.77, "brown")
+teacher2 = Teacher("Jorge", 44, 1.61, "black")
+teacher3 = Teacher("Mateo", 33, 1.80, "blond")
+        
+student1.study("POO")
+teacher1.teach("physic")
+student2.eat("spaghettis")
+teacher2.walk(10)
+teacher3.speak("Germany")
